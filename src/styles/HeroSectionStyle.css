@@ -1,0 +1,29 @@
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.rightImage img {
+    width: 300px;
+    border-radius: 30px;
+}
+
+.rightImage {
+    margin: auto;
+}
+
+.leftText {
+    margin: 0 2%;
+}
+
+@media(min-width:680px) {
+    section {
+        flex-direction: row;
+    }
+
+    .rightImage {
+        margin: 0 2%;
+
+    }
+}

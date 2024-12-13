@@ -1,0 +1,10 @@
+body {
+    background-color: #1C1C3C;
+    color: #EAE8E3;
+    /* overflow-y: hidden; */
+}
+
+em {
+    background-color: #E94E44;
+    padding: 3px;
+}

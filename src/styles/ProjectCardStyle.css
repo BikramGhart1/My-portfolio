@@ -1,0 +1,39 @@
+.card {
+    border: 1px solid #333232;
+    /* background-color: #F7C859; */
+    background-color: #EAE8E3;
+    color: #E94E44;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.03, 1.03);
+    cursor: pointer;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.description a {
+    color: #333232;
+    font-weight: bolder;
+}
+
+.description a:hover {
+    color: #F7C859;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 250px;
+}
