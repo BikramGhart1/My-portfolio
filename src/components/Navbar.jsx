@@ -4,7 +4,7 @@ import '../styles/NavbarStyle.css'
 export default function Navbar() {
     return (
         <nav>
-            <div>
+            <div className='home'>
                 <a href="#">Home</a>
             </div>
             <div className='rightNav'>

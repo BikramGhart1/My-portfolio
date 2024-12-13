@@ -9,7 +9,17 @@
 
 .cardContainers {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     margin-top: 40px;
+
+}
+
+@media(min-width:768px) {
+
+    .cardContainers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }

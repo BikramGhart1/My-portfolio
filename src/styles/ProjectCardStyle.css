@@ -6,6 +6,8 @@
     width: 300px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .card:hover {
@@ -36,4 +38,13 @@
 
 .image img {
     width: 250px;
+}
+
+@media(max-width:768px) {
+    .card{
+        padding: 0 30px 10px;
+    }
+    .image img {
+        width: 200px;
+    }
 }
