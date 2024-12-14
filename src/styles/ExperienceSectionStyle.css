@@ -1,5 +1,5 @@
 .experience {
-    min-height: 30vh;
+    min-height: 80vh;
     text-align: center;
     margin: 20px 0;
 }
@@ -10,9 +10,9 @@
     align-items: center;
 
 }
-.content img{
+
+.content img {
     width: 300px;
     /* align-items: center; */
     margin-top: 20px;
 }
-

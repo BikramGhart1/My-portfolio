@@ -1,0 +1,27 @@
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+}
+.contactSection h2 {
+    text-align: center;
+}
+label{
+    border-bottom: 2px solid #F7C859;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.socials i {
+    font-size: 30px;
+}
