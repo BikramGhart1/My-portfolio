@@ -1,22 +1,17 @@
 import React from 'react'
 import '../styles/ProjectCardStyle.css'
 
-export default function ProjectCard() {
+export default function ProjectCard({ imgSrc, name, desc,techs, liveDemo, repoLink }) {
     return (
         <div className='card'>
             <div className="image">
-                <img src="https://i.pinimg.com/736x/7e/3b/b6/7e3bb628f141025fa1203219bd1b67ea.jpg" alt="" />
+                <img src={imgSrc} alt="" />
             </div>
             <div className="description">
-                <h2>
-                    Name: Todo List
-                </h2>
-                <p>
-                    Description: This is basic to do list
-                </p>
-                <a href="https://bikramghart1.github.io/WebTechI-final-project/">Live Demo</a>
-                <a href="https://github.com/BikramGhart1/WebTechI-final-project">Repo</a>
-
+                <h2>{name} </h2>
+                <p>{desc}</p>
+                <a href={liveDemo} target='_blank'>Live Demo</a>
+                <a href={repoLink} target='_blank'>Repo</a>
             </div>
         </div>
     )

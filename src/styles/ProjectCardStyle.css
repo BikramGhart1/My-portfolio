@@ -1,50 +1,155 @@
+/* General styling for the card */
 .card {
-    border: 1px solid #333232;
-    /* background-color: #F7C859; */
-    background-color: #EAE8E3;
-    color: #E94E44;
-    width: 300px;
+    border: 3px solid #E94E44; /* Red border for a poker card feel */
+    background: #1E1E1E; /* Black base for mystery */
+    color: #fff; /* White text for contrast */
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
+    overflow: hidden;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 0 15px #E94E44; /* Red glow shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Playfair Display', serif; /* Elegant serif font for titles */
+    position: relative;
+    text-align: center;
+    /* box-sizing: border-box; */
 }
 
+/* Add decorative pseudo-elements */
+/* .card::before,
+.card::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: repeating-linear-gradient(
+        90deg,
+        #E94E44,
+        #E94E44 10px,
+        #1E1E1E 10px,
+        #1E1E1E 20px
+    );
+    top: 10px;
+    left: 10%;
+} */
+
+/* .card::after {
+    top: unset;
+    bottom: 10px;
+} */
+
+/* Hover effects for a magical glow */
 .card:hover {
-    transform: scale(1.03, 1.03);
+    transform: rotateY(5deg) scale(1.05); /* Slight rotation and zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7), 0 0 20px #F7C859; /* Golden glow */
     cursor: pointer;
 }
 
-.description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
-
-.description a {
-    color: #333232;
-    font-weight: bolder;
-}
-
-.description a:hover {
-    color: #F7C859;
-}
-
+/* Styling the image */
 .image {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px; /* Rounded borders for a card look */
+    background: linear-gradient(145deg, #E94E44, #1E1E1E); /* Poker-style gradient */
 }
 
 .image img {
-    width: 250px;
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
-@media(max-width:768px) {
-    .card{
-        padding: 0 30px 10px;
+/* Description section */
+.description {
+    text-align: center;
+}
+
+.description h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #F7C859; /* Golden yellow for a magical vibe */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 3px #000; /* Subtle shadow */
+    position: relative;
+}
+
+/* .description h2::after { */
+    /* content: '♠️ ♥️ ♦️ ♣️'; Poker suits for decoration */
+    /* position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #E94E44;
+} */
+
+/* Text paragraphs */
+.description p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Complementary sans-serif font */
+}
+
+/* Links styled as buttons */
+.description a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #1E1E1E;
+    text-decoration: none;
+    background-color: #F7C859; /* Golden button */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.description a:hover {
+    background-color: #E94E44; /* Red on hover */
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Flexbox container */
+.cardContainers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Section header */
+.sectionHeader {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #F7C859; /* Golden header */
+    margin: 20px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
     }
+
     .image img {
-        width: 200px;
+        max-height: 150px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 300px;
     }
 }

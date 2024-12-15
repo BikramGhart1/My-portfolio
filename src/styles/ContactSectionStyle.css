@@ -4,14 +4,17 @@
     align-items: center;
     padding-top: 50px;
 }
-.heading{
+
+.heading {
     width: 100%;
     text-align: center;
 }
+
 .contactSection h2 {
     text-align: center;
 }
-label{
+
+label {
     border-bottom: 2px solid #F7C859;
 }
 
@@ -24,4 +27,5 @@ label{
 
 .socials i {
     font-size: 30px;
+    cursor: pointer;
 }

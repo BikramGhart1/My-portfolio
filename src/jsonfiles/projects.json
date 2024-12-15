@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "imgSrc":"/images/todolist.png",
+        "name":"Todo List",
+        "desc":"This is basic to do list I made for project assignment of Web Technology I in fourth sem",
+        "techs":["html","css","javascript"],
+        "liveDemo":"https://bikramghart1.github.io/WebTechI-final-project/",
+        "repoLink":"https://github.com/BikramGhart1/WebTechI-final-project"
+    },
+    {
+        "id":2,
+        "imgSrc":"/images/dbzmemory.png",
+        "name":"DBZ Memory Game",
+        "desc":"Don't click the same card twice game",
+        "techs":["html","css","javascript","react"],
+        "liveDemo":"https://dbz-memory-game.pages.dev/",
+        "repoLink":"https://github.com/BikramGhart1/DBZ-Memory-Game"
+    },
+    {
+        "id":3,
+        "imgSrc":"/images/simplepaint.png",
+        "name":"Simple Paint Application",
+        "desc":"Basic Painting application made with canvas",
+        "techs":["html","css","javascript","react","tailwind"],
+        "liveDemo":"https://simple-paint.pages.dev/",
+        "repoLink":"https://github.com/BikramGhart1/Simple-Paint"
+    },
+    {
+        "id":4,
+        "imgSrc":"/images/dummyshoping.png",
+        "name":"Dummy shopping Cart",
+        "desc":"Dummy shopping cart that fetches a fake API and simulates frontend side of the online shopping cart",
+        "techs":["html","css","javascript","react","tailwind"],
+        "liveDemo":"https://dummy-shoping-cart.pages.dev/",
+        "repoLink":"https://github.com/BikramGhart1/Dummy-Shoping-Cart"
+    }
+]

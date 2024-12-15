@@ -8,8 +8,11 @@ nav {
     padding: 25px 0;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 50;
-    width: 98%;
+    /* width: 99%; */
+    /* margin-left: 0; */
 }
 
 nav a {
@@ -18,13 +21,15 @@ nav a {
     background-color: #E94E44;
     padding: 6px;
 }
-.home{
+
+.home {
     display: flex;
     flex-direction: column;
 }
+
 .rightNav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 30%;
+    width: 50%;
 }
