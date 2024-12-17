@@ -2,9 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /* margin-top: 20px; */
-    /* min-height: 1000px; */
-
 }
 
 .cards em {

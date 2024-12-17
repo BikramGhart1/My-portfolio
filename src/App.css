@@ -8,3 +8,18 @@ em {
     background-color: #E94E44;
     padding: 3px;
 }
+
+@media(min-width:768px) {
+    em {
+        font-size: large;
+    }
+}
+
+@media(min-width:1441px) {
+
+    body,
+    em,
+    a {
+        font-size: x-large;
+    }
+}

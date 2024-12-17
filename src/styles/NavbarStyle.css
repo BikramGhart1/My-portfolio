@@ -1,9 +1,8 @@
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     border-bottom: 1px solid #333232;
-    /* background-color: transparent; */
     background-color: #1C1C3C;
     padding: 25px 0;
     position: fixed;
@@ -11,15 +10,24 @@ nav {
     left: 0;
     right: 0;
     z-index: 50;
-    /* width: 99%; */
-    /* margin-left: 0; */
 }
 
 nav a {
     text-decoration: none;
     color: #EAE8E3;
-    background-color: #E94E44;
+    background-color: transparent;
+    border-radius: 5px;
+    border-bottom: 3px solid #E94E44;
     padding: 6px;
+}
+
+nav a:hover {
+    box-shadow: 0 4px 8px #E94E44;
+    background-color: #1c1c29;
+}
+
+nav a:active {
+    background-color: #E94E44;
 }
 
 .home {
@@ -32,4 +40,56 @@ nav a {
     flex-direction: row;
     justify-content: space-between;
     width: 50%;
+}
+
+.toggleMenu {
+    display: none;
+}
+
+.toggleMenu .bar {
+    border-bottom: 4px solid #E94E44;
+    width: 30px;
+    height: 5px;
+}
+
+
+.toggleMenu:hover {
+    transform: scale(1.05);
+}
+
+.toggleMenu:active {
+    transform: scale(-1.02)
+}
+
+@media(max-width:768px) {
+
+    .toggleMenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rightNav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 5rem;
+        padding: 5px 5px;
+        border-radius: 5px;
+        border: 1px solid #333232;
+        background-color: #333232;
+
+    }
+
+    .open {
+        display: flex;
+    }
+
+
+}
+
+@media(min-width:768px) {
+    nav {
+        font-size: large;
+    }
 }

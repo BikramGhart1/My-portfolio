@@ -3,7 +3,7 @@ import '../styles/SkillsSectionStyle.css'
 
 export default function SkillsSection() {
     return (
-        <div className='skills'>
+        <div className='skills' id='skills'>
             <h2 className='sectionHeader'>Skills Section</h2>
             <em className='skillsDescription'>
                 Here are some of the technical skills I have acquired through my learning journey and projects. These tools and technologies empower me to build robust and interactive applications.

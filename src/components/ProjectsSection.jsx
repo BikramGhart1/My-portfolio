@@ -26,7 +26,6 @@ export default function ProjectsSection() {
               key={index}
               imgSrc={card.imgSrc}
               name={card.name}
-              // name="hey"
               desc={card.desc}
               techs={card.techs}
               liveDemo={card.liveDemo}
@@ -36,7 +35,6 @@ export default function ProjectsSection() {
           })
         }
       </div>
-      {/* imgSrc='https://i.pinimg.com/736x/7e/3b/b6/7e3bb628f141025fa1203219bd1b67ea.jpg' */}
     </section>
   )
 }

@@ -1,9 +1,7 @@
 section {
     display: flex;
     flex-direction: column;
-
-    margin-top: 100px;
-    /* border-bottom: 1px solid #333232; */
+    padding-top: 5rem;
 
 }
 
@@ -21,14 +19,26 @@ section {
     margin: 0 2%;
 }
 
-@media(min-width:780px) {
+.primaryPara {
+    padding-bottom: 20px;
+}
+.primaryPara h2{
+    color: #F7C859;
+}
+@media(min-width:768px) {
     section {
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 6rem;
+
+
     }
 
     .rightImage {
         margin: 0 2%;
 
+    }
+    .leftText{
+        font-size: larger;
     }
 }
