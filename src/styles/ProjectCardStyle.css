@@ -1,17 +1,24 @@
 /* General styling for the card */
 .card {
-    border: 3px solid #E94E44; /* Red border for a poker card feel */
-    background: #1E1E1E; /* Black base for mystery */
-    color: #fff; /* White text for contrast */
+    border: 3px solid #E94E44;
+
+    /* Red border for a poker card feel */
+    width: 100%;
+    background: #1E1E1E;
+    /* Black base for mystery */
+    color: #fff;
+    /* White text for contrast */
     display: flex;
     flex-direction: column;
     overflow: hidden;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 0 15px #E94E44; /* Red glow shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 0 15px #E94E44;
+    /* Red glow shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Playfair Display', serif; /* Elegant serif font for titles */
+    font-family: 'Playfair Display', serif;
+    /* Elegant serif font for titles */
     position: relative;
     text-align: center;
     /* box-sizing: border-box; */
@@ -42,8 +49,10 @@
 
 /* Hover effects for a magical glow */
 .card:hover {
-    transform: rotateY(5deg) scale(1.05); /* Slight rotation and zoom */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7), 0 0 20px #F7C859; /* Golden glow */
+    transform: rotateY(5deg) scale(1.05);
+    /* Slight rotation and zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7), 0 0 20px #F7C859;
+    /* Golden glow */
     cursor: pointer;
 }
 
@@ -55,8 +64,10 @@
     margin-bottom: 15px;
     border: 2px solid #fff;
     padding: 5px;
-    border-radius: 10px; /* Rounded borders for a card look */
-    background: linear-gradient(145deg, #E94E44, #1E1E1E); /* Poker-style gradient */
+    border-radius: 10px;
+    /* Rounded borders for a card look */
+    background: linear-gradient(145deg, #E94E44, #1E1E1E);
+    /* Poker-style gradient */
 }
 
 .image img {
@@ -74,15 +85,17 @@
 .description h2 {
     font-size: 1.6rem;
     font-weight: bold;
-    color: #F7C859; /* Golden yellow for a magical vibe */
+    color: #F7C859;
+    /* Golden yellow for a magical vibe */
     margin-bottom: 10px;
-    text-shadow: 2px 2px 3px #000; /* Subtle shadow */
+    text-shadow: 2px 2px 3px #000;
+    /* Subtle shadow */
     position: relative;
 }
 
 /* .description h2::after { */
-    /* content: '♠️ ♥️ ♦️ ♣️'; Poker suits for decoration */
-    /* position: absolute;
+/* content: '♠️ ♥️ ♦️ ♣️'; Poker suits for decoration */
+/* position: absolute;
     bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
@@ -95,7 +108,8 @@
     font-size: 1rem;
     margin: 10px 0;
     color: #fff;
-    font-family: 'Roboto', sans-serif; /* Complementary sans-serif font */
+    font-family: 'Roboto', sans-serif;
+    /* Complementary sans-serif font */
 }
 
 /* Links styled as buttons */
@@ -107,14 +121,16 @@
     font-weight: bold;
     color: #1E1E1E;
     text-decoration: none;
-    background-color: #F7C859; /* Golden button */
+    background-color: #F7C859;
+    /* Golden button */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .description a:hover {
-    background-color: #E94E44; /* Red on hover */
+    background-color: #E94E44;
+    /* Red on hover */
     color: #fff;
     transform: scale(1.1);
 }
@@ -133,8 +149,18 @@
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    color: #F7C859; /* Golden header */
+    color: #F7C859;
+    /* Golden header */
     margin: 20px 0;
+}
+
+.techsUsed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.techsUsed em{
+    padding: 6px;
 }
 
 /* Responsive design for smaller screens */

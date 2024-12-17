@@ -12,14 +12,16 @@ export default function ProjectsSection() {
       .then((data) => setCards(data))
       .catch(error => console.error("Error fetching data: ", error));
   }, [])
+
   return (
     <section className='cards' id='projects'>
       <h2 className='sectionHeader'>Project Section</h2>
-      <em>Flip the cards by clicking on them</em>
+      <em>Project illustrations crreated by me with live demo and repo link </em>
       <div className='cardContainers'>
         {
 
           cards.map((card, index) => {
+
             return <ProjectCard
               key={index}
               imgSrc={card.imgSrc}
@@ -29,6 +31,7 @@ export default function ProjectsSection() {
               techs={card.techs}
               liveDemo={card.liveDemo}
               repoLink={card.repoLink}
+              
             />
           })
         }
