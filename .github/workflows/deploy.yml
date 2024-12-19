@@ -1,26 +1,30 @@
-name: Deploy to GitHub Pages
+name: Deploy React App
 
 on:
   push:
     branches:
-      - main  # Trigger on pushes to the main branch
+      - main  # Trigger the workflow when you push to the main branch
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Dependencies
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Adjust the Node version as needed
+
+      - name: Install dependencies
         run: npm install
 
-      - name: Build Project
-        run: npm run build
+      - name: Build the React app using Vite
+        run: npm run build  # This will run "vite build"
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+        run: |
+          npm install gh-pages --save-dev
+          npm run deploy  # This will deploy the 'dist' folder to GitHub Pages
