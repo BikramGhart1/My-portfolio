@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("../src/jsonfiles/projects.json")
+    fetch("/jsonfiles/projects.json")
       .then((response) => response.json())
       .then((data) => setCards(data))
       .catch(error => console.error("Error fetching data: ", error));
@@ -30,7 +30,7 @@ export default function ProjectsSection() {
               techs={card.techs}
               liveDemo={card.liveDemo}
               repoLink={card.repoLink}
-              
+
             />
           })
         }
