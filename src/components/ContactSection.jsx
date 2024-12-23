@@ -9,8 +9,7 @@ export default function ContactSection() {
                 <em>Feel free to reach out for collaboration, inquiries or just say hi!</em>
             </div>
             <div className="contactDetails">
-                <p><i className="fas fa-envelope"></i> :  bikramgharti39@gmail.com</p>
-                <label htmlFor="socials">Social links</label>
+                <p className='mail'><i className="fas fa-envelope"></i> :  bikramgharti39@gmail.com</p>
                 <div className="socials">
                     <a href="https://www.instagram.com/_bikramagar/" target='_blank'> <i className="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/bikram.gmagar.9/" target='_blank'><i className="fab fa-facebook"></i></a>
@@ -18,7 +17,7 @@ export default function ContactSection() {
                     <a href="https://github.com/BikramGhart1" target='_blank'><i className="fab fa-github"></i></a>
 
                 </div>
-                <p>© 2025 All Rights Reserved.</p>
+                <p>© 2025 Bikram Gharti. All Rights Reserved.</p>
 
             </div>
         </div>

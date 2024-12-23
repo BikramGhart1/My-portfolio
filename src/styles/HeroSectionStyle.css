@@ -1,3 +1,19 @@
+#about {
+    margin: 10px -10px;
+    padding: 80px 20px 100px 20px;
+    /* background-image: url('https://images.unsplash.com/photo-1614850523011-8f49ffc73908?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ymx1ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D'); */
+    background-image: url('/images/MyfirstFlipaClip-ezgif.com-video-to-gif-converter.gif');
+
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -5,27 +21,35 @@ section {
 
 }
 
-.rightImage img {
-    width: 300px;
-    border-radius: 30px;
-    box-shadow: 0 5px 8px #333232;
-}
-
-.rightImage {
-    margin: auto;
-}
-
 .leftText {
     margin: 0 2%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+
 }
 
 .primaryPara {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
-.primaryPara h2{
+
+.primaryPara h2 {
     color: #F7C859;
 }
+
+.secondaryPara p {
+    margin-top: 0;
+}
+
 @media(min-width:768px) {
+    #about {
+        min-height: 70vh;
+        justify-content: center;
+        background-image: url('/images/MyfirstFlipaClip-ezgif.com-video-to-gif-converter.gif');
+        background-size: contain;
+
+    }
+
     section {
         flex-direction: row;
         justify-content: space-between;
@@ -34,11 +58,11 @@ section {
 
     }
 
-    .rightImage {
-        margin: 0 2%;
-
-    }
-    .leftText{
+    .leftText {
         font-size: larger;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        border-radius: 15px;
     }
 }
