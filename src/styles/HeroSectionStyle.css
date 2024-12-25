@@ -1,16 +1,16 @@
 #about {
     margin: 10px -10px;
-    padding: 80px 20px 100px 20px;
+    padding: 90px 20px 80px 20px;
     /* background-image: url('https://images.unsplash.com/photo-1614850523011-8f49ffc73908?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ymx1ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D'); */
-    background-image: url('/images/MyfirstFlipaClip-ezgif.com-video-to-gif-converter.gif');
+    background-image: url('/images/background-clown-image3.png');
 
-    background-size: cover;
+    background-size: contain;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 50vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 40vh;
+    /* background-color: rgba(0, 0, 0, 0.2); */
 
 }
 
@@ -45,8 +45,8 @@ section {
     #about {
         min-height: 70vh;
         justify-content: center;
-        background-image: url('/images/MyfirstFlipaClip-ezgif.com-video-to-gif-converter.gif');
-        background-size: contain;
+        background-image: url('/images/background-clown-image3.png');
+        background-size: cover;
 
     }
 
