@@ -23,7 +23,7 @@ section {
 
 .leftText {
     margin: 0 2%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 15px;
 
@@ -35,6 +35,10 @@ section {
 
 .primaryPara h2 {
     color: #F7C859;
+}
+
+.primaryPara .intro {
+    font-size: larger;
 }
 
 .secondaryPara p {
@@ -61,8 +65,11 @@ section {
     .leftText {
         font-size: larger;
         width: 50%;
-        background-color: rgba(0, 0, 0, 0.9);
         padding: 20px;
         border-radius: 15px;
+    }
+
+    .leftText h2 {
+        font-size: xx-large;
     }
 }

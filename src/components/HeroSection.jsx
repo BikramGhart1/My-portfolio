@@ -9,7 +9,7 @@ export default function HeroSection() {
                 <div className="primaryPara">
                     <h2>Greetings! </h2>
                     <p>
-                        <strong>I'm Bikram Gharti</strong>,
+                        <strong className='intro'>I'm Bikram Gharti</strong>,
                         <br />   a passionate <em>BIT</em>  student exploring Web Development. I focus on blending <strong>creativity</strong> and <strong>functionality</strong> to create unique designs.
                     </p>
                 </div>
