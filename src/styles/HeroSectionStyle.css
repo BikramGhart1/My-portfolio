@@ -1,17 +1,20 @@
 #about {
     margin: 10px -10px;
     padding: 90px 20px 80px 20px;
-    /* background-image: url('https://images.unsplash.com/photo-1614850523011-8f49ffc73908?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ymx1ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D'); */
     background-image: url('/images/background-clown-image3.png');
-
+    /* background-attachment: fixed; */
     background-size: contain;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 40vh;
-    /* background-color: rgba(0, 0, 0, 0.2); */
+}
 
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 section {
@@ -22,36 +25,107 @@ section {
 }
 
 .leftText {
-    margin: 0 2%;
-    background-color: rgba(0, 0, 0, 0.4);
+    margin: 10px 2%;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 15px;
 
 }
 
-.primaryPara {
-    padding-bottom: 5px;
+.skillItem:hover {
+    transform: scale(1.04);
 }
 
-.primaryPara h2 {
-    color: #F7C859;
+.descriptionHero {
+    display: flex;
+    flex-direction: column;
+}
+.skillHeader{
+    margin-bottom: 20px;
+}
+.skillHeader h2{
+    margin: 5px 0;
+}
+.para {
+    background-color: rgba(0, 0, 0, 0.8);
+    flex: 1;
 }
 
-.primaryPara .intro {
-    font-size: larger;
+.skillsHero {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+.imagePfp{
+    padding-bottom: 20px;
+}
+.imagePfp img {
+    border-radius: 50%;
 }
 
-.secondaryPara p {
-    margin-top: 0;
+.profile {
+    display: flex;
+    flex-direction: row;
 }
+.nameAndLocation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.nameAndLocation p{
+    margin: 0;
+}
+.skillsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skillItem{
+    flex: 1 1 100px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+
+}
+@media(max-width:768px) {
+    .profile .imagePfp {
+        margin-right: 20px;
+    }
+}
+
+
 
 @media(min-width:768px) {
     #about {
         min-height: 70vh;
-        justify-content: center;
-        background-image: url('/images/background-clown-image3.png');
         background-size: cover;
 
+    }
+
+    .subcontainer {
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .descriptionHero {
+        flex-direction: row;
+
+    }
+
+    .skillsHero {
+        margin: 10px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
     }
 
     section {
@@ -64,7 +138,6 @@ section {
 
     .leftText {
         font-size: larger;
-        width: 50%;
         padding: 20px;
         border-radius: 15px;
     }

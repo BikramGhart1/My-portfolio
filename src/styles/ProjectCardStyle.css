@@ -1,7 +1,11 @@
 .card {
     border: 3px solid #E94E44;
     width: 100%;
-    background: #1E1E1E;
+    /* background: #1E1E1E; */
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background: linear-gradient(to bottom, #0c0c0e, #1a1a1d);
+
+
     color: #fff;
     display: flex;
     flex-direction: column;

@@ -16,7 +16,7 @@ export default function ProjectsSection() {
   return (
     <section className='cards' id='projects'>
       <h2 className='sectionHeader'>Project Section</h2>
-      <em>Project illustrations crreated by me with live demo and repo link </em>
+      <em>Illustrations of the Projects I worked on with live demo and repo link </em>
       <div className='cardContainers'>
         {
 

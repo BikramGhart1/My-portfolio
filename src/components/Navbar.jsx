@@ -48,7 +48,8 @@ export default function Navbar() {
     return (
         <nav>
             <div className='home'>
-                <a href="#">Home</a>
+                <a href="#"><i className="fas fa-home"></i></a>
+
             </div>
             <div className="toggleMenu" ref={toggleButtonRef} >
                 <div className="bar"></div>
