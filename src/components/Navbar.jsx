@@ -59,7 +59,6 @@ export default function Navbar() {
             <div ref={menuRef} className={`rightNav ${isOpen ? 'open' : ''}`} >
                 <a onClick={closeOnLinks} href="#projects">Projects</a>
                 <a onClick={closeOnLinks} href="#experience">Experience</a>
-                <a onClick={closeOnLinks} href="#skills">Skills</a>
                 <a onClick={closeOnLinks} href="#contact">Contact</a>
             </div>
         </nav>
