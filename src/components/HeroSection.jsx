@@ -9,7 +9,8 @@ export default function HeroSection() {
                 <div className="descriptionHero">
                     <div className="profile leftText">
                         <div className="imagePfp">
-                            <img src="https://yt3.ggpht.com/ytc/AIdro_nOPo0zbISxKkuYa8x5pEgwCZl8xrXbjqc54V3iNsYmacs=s88-c-k-c0x00ffffff-no-rj" alt="pfp" />
+                            {/* <img src="https://yt3.ggpht.com/ytc/AIdro_nOPo0zbISxKkuYa8x5pEgwCZl8xrXbjqc54V3iNsYmacs=s88-c-k-c0x00ffffff-no-rj" alt="pfp" /> */}
+                            <img src="/images/raven-monocole.png" alt="" />
                         </div>
                         <div className='nameAndLocation'>
                             <p><strong>Bikram Gharti</strong></p>

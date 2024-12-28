@@ -36,7 +36,10 @@ nav a:active {
     display: flex;
     flex-direction: column;
 }
-
+.home img{
+    width: 30px;
+    border-radius: 50%;
+}
 .rightNav {
     display: flex;
     flex-direction: row;
