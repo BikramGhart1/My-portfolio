@@ -11,7 +11,6 @@ export default function ContactSection() {
             <div className="contactDetails">
                 <p className='mail'><i className="fas fa-envelope"></i> :  bikramgharti39@gmail.com</p>
                 <div className="socials">
-                    <a href="https://www.instagram.com/_bikramagar/" target='_blank'> <i className="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/bikram.gmagar.9/" target='_blank'><i className="fab fa-facebook"></i></a>
                     <a href="https://www.linkedin.com/in/bikram-magar-382b26247/" target='_blank'><i className="fab fa-linkedin"></i></a>
                     <a href="https://github.com/BikramGhart1" target='_blank'><i className="fab fa-github"></i></a>
