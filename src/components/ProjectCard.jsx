@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/ProjectCardStyle.css'
 
-export default function ProjectCard({ imgSrc, name, desc, techs, liveDemo, repoLink }) {
+export default function ProjectCard({ imgSrc, name, desc, techs, liveDemo, repoLinks }) {
     return (
         <div className='card'>
             <div className="image">
@@ -18,7 +18,12 @@ export default function ProjectCard({ imgSrc, name, desc, techs, liveDemo, repoL
                 </div>
                 <br />
                 <a href={liveDemo} target='_blank'>Live Demo</a>
-                <a href={repoLink} target='_blank'>Repo</a>
+                {
+                    repoLinks.map((repoLink, index)=>{
+                        return <a href={repoLink} key={index} target='_blank'>Repo</a>
+                    })
+                }
+                
             </div>
         </div>
     )

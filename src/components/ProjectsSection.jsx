@@ -29,7 +29,7 @@ export default function ProjectsSection() {
               desc={card.desc}
               techs={card.techs}
               liveDemo={card.liveDemo}
-              repoLink={card.repoLink}
+              repoLinks={card.repoLinks}
 
             />
           })
